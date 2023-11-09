@@ -1,4 +1,4 @@
-package minggu9.minggu10;
+
 
 public class Bioskop09 {
     public static void main(String[] args) {

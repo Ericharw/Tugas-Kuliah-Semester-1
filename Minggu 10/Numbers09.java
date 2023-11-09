@@ -1,4 +1,3 @@
-package minggu9.minggu10;
 
 public class Numbers09 {
     public static void main(String []args) {

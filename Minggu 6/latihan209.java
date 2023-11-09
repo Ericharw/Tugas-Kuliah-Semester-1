@@ -1,4 +1,4 @@
-package minggu6;
+
 import java.util.Scanner;
 public class latihan209 {
     public static void main(String[] args) {

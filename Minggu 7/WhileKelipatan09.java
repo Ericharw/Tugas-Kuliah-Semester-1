@@ -1,4 +1,4 @@
-package minggu6.minggu7;
+
 import java.util.Scanner;
 public class WhileKelipatan09 {
     public static void main(String[] args) {

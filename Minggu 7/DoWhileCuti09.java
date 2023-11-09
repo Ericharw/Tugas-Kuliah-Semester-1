@@ -1,4 +1,4 @@
-package minggu6.minggu7;
+
 import java.util.Scanner;
 public class DoWhileCuti09 {
     public static void main(String[] args) {

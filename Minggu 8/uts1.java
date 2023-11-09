@@ -1,4 +1,4 @@
-package minggu6.minggu7.uts;
+
 import java.util.Scanner;
 public class uts1 {
             public static void main(String[] args) {

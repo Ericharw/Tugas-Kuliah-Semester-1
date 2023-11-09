@@ -1,4 +1,4 @@
-package minggu6.minggu7.uts;
+
 
 import java.util.Scanner;
 

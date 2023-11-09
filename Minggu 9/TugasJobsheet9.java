@@ -1,4 +1,4 @@
-package minggu9;
+
 
 import java.util.Scanner;
 

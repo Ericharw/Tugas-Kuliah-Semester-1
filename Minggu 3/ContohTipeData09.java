@@ -1,4 +1,4 @@
-package Minggu3;
+
 
 public class ContohTipeData09 {
     public static void main (String[] args){

@@ -1,4 +1,4 @@
-package Minggu3;
+
 import java.util.Scanner;
 public class tegangan {
     public static void main (String[] args){

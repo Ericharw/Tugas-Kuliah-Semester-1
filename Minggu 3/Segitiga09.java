@@ -1,4 +1,4 @@
-package Minggu3;
+
 import java.util.Scanner;
 public class Segitiga09 {
     public static void main (String[] args){

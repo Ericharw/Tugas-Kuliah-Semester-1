@@ -1,4 +1,4 @@
-package Minggu3.minggu4;
+
 import java.util.Scanner;
 public class Gaji09 {
     public static void main(String[] args){

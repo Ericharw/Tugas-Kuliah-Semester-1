@@ -1,4 +1,4 @@
-package minggu9.minggu10;
+
 import java.util.Scanner;
 public class BioskopWithScanner09 {
     public static void main(String[] args) {
