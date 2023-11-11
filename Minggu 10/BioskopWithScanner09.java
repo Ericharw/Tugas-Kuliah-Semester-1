@@ -21,23 +21,29 @@ public class BioskopWithScanner09 {
                 case 1:
                 System.out.print("Masukkan nama : ");
                 nama = sc.nextLine();
-                System.out.print("Masukkan baris : ");
-                baris = sc.nextInt();
-                System.out.print("Masukkan kolom : ");
-                kolom = sc.nextInt();
-                sc.nextLine();
 
-                if (baris >= 1 && baris <= 4 && (kolom == 1 || kolom == 2)) {
-                    if (penonton[baris - 1][kolom - 1] == null) {
-                        penonton[baris - 1][kolom - 1] = nama;
-                        System.out.println("Data penonton berhasil diinputkan ");
+                boolean kursiTersedia = false;
+
+                do {
+                    System.out.println("Masukkan baris (1-4): ");
+                    baris = sc.nextInt();
+                    System.out.println("Masukkan kolom (1/2): ");
+                    kolom = sc.nextInt();
+                    sc.nextLine();
+
+                    if (baris >= 1 && baris <= 4 && (kolom == 1 || kolom == 2)) {
+                        if (penonton[baris - 1][kolom - 1] == null) {
+                            penonton[baris - 1][kolom - 1] = nama;
+                            System.out.println("Data penonton berhasil diinputkan ");
+                            kursiTersedia = true;
+                        }else {
+                        System.out.println("Kursi sudah tidak tersedia. silakan pilih kursi lain ");
+                        }
                     }else {
-                        System.out.println("Kursi sudah tidak tersedia ");
+                        System.out.println("Baris atau kolom tidak valid. Silakan pilih ulang ");
                     }
-                }else {
-                    System.out.println("Baris atau kolom tidak valid. ");
-                }
-                break;
+                }while (!kursiTersedia);
+                    break;
                 case 2:
                 System.out.println("Daftar penonton : ");
                 for (int i = 0; i < 4; i++ ) {
