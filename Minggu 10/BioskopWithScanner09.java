@@ -27,9 +27,13 @@ public class BioskopWithScanner09 {
                 kolom = sc.nextInt();
                 sc.nextLine();
 
-                if (baris >= 1 && baris <= 1 && kolom <= 2) {
-                    penonton[baris - 1][kolom - 1] = nama;
-                    System.out.println("Data penonton berhasil diinputkan. ");
+                if (baris >= 1 && baris <= 4 && (kolom == 1 || kolom == 2)) {
+                    if (penonton[baris - 1][kolom - 1] == null) {
+                        penonton[baris - 1][kolom - 1] = nama;
+                        System.out.println("Data penonton berhasil diinputkan ");
+                    }else {
+                        System.out.println("Kursi sudah tidak tersedia ");
+                    }
                 }else {
                     System.out.println("Baris atau kolom tidak valid. ");
                 }
@@ -39,7 +43,7 @@ public class BioskopWithScanner09 {
                 for (int i = 0; i < 4; i++ ) {
                     for (int j = 0; j < 2; j++ ) {
                         if (penonton[i][j] !=null) {
-                            System.out.println("Baris " + (i + 1) + ", kolom" + (j + 1) + ": " + penonton[i][j]);
+                            System.out.println("Baris " + (i + 1) + ", kolom " + (j + 1) + ": " + penonton[i][j]);
                         }
                     }
                 }
