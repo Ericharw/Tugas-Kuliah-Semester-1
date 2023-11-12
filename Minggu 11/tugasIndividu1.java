@@ -6,16 +6,18 @@ public class tugasIndividu1 {
         System.out.print("Masukkan nilai N (minimal 3) : ");
         int n = sc.nextInt();
 
-        if (n < 3 ) {
+        if (n < 3) {
             System.out.println("Nilai N harus minimal 3");
-        }else {
-            for (int i = 1; i<= n; i++) {
-                for (int j = 1; j <= i; j++) {
-                    System.out.print(j + " ");
+        } else {
+            for (int i=1; i<=n; i++) {
+                for (int j=n; j>i; j--) {
+                    System.out.print(" ");
+                }
+                for (int k=1; k<=i; k++) {
+                    System.out.print(k);
                 }
                 System.out.println();
             }
         }
     }
-    
 }
