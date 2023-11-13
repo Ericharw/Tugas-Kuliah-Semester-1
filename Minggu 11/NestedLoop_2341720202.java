@@ -20,17 +20,15 @@ public class NestedLoop_2341720202 {
         for (int i = 0; i < rata2.length; i++) {
             rata2[i] /= 7;
         }
-
+        int k = 1;
         for (double[] kota : temps) {
-            int i = 1;
-            System.out.print("Kota ke-"+i+" : ");
+            System.out.print("Kota ke-"+k+" : ");
             for (double hari : kota) {
                 System.out.print(hari + " ");
             }
             System.out.println();
-            i++;
+            k++;
         }
-
         for (int i = 0; i < rata2.length; i++) {
             System.out.println("Rata-rata kota ke-" + (i+1) + " : " + rata2[i]);
         }
