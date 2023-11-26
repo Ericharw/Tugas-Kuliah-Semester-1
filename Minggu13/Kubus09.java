@@ -4,7 +4,7 @@ public class Kubus09 {
         Scanner sc = new Scanner(System.in);
 
         int s,Lp,vol;
-        System.out.println("Masukkan panjang sisi kubus");
+        System.out.print("Masukkan panjang sisi kubus :");
         s=sc.nextInt();
 
         Lp=hitungLp(s);
