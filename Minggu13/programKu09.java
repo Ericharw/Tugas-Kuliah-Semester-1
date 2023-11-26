@@ -17,5 +17,4 @@ public class programKu09 {
         int temp = Jumlah(1, 1);
         TampilJumlah(temp, 5);
     }
-
 }
